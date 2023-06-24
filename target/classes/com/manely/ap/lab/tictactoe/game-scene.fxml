@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPane" hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: grey;" vgap="8.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manely.ap.lab.tictactoe.GameSceneController">
+  <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="33.33" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" percentWidth="33.33" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="33.33" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="25.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="25.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="25.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" focusTraversable="false" text="Timer: " textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="85.0" prefWidth="97.0" GridPane.columnIndex="2">
+         <children>
+            <Label fx:id="timerLabel" focusTraversable="false" textFill="WHITE">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" GridPane.columnIndex="4">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="14.0">
+               <children>
+                  <Button fx:id="musicButton" focusTraversable="false" mnemonicParsing="false" onAction="#musicButtonPressed" text="Music" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Braille" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" focusTraversable="false" mnemonicParsing="false" onAction="#exitButtonPressed" prefWidth="51.0" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Braille" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="5" />
+      <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: grey;" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="5" />
+      <Separator prefWidth="200.0" style="-fx-background-color: grey;" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+      <Separator prefWidth="200.0" style="-fx-background-color: grey;" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+      <Label fx:id="playerLabel" focusTraversable="false" textFill="WHITE" GridPane.rowIndex="6">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" focusTraversable="false" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" text="Robot: O" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="6">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="1">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="3">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="5">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <font>
+            <Font name="Apple Braille" size="50.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+</GridPane>
