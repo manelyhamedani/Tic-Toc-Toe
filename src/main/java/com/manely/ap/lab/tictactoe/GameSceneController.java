@@ -118,8 +118,9 @@ public class GameSceneController {
 
     @FXML
     void buttonPressed(ActionEvent event) {
-        if (GameFactory.getInstance().getStatus().get()) {
+        ObservableList<Node> children = gridPane.getChildren();
 
+        if (GameFactory.getInstance().getStatus().get()) {
             Button button = (Button) event.getSource();
             int index = (Integer) button.getUserData();
 
@@ -127,7 +128,6 @@ public class GameSceneController {
                 return;
             }
 
-            ObservableList<Node> children = gridPane.getChildren();
             for (int i = FIRST_BUTTON_INDEX; i <= LAST_BUTTON_INDEX; ++i) {
                 children.get(i).setDisable(true);
             }
@@ -138,7 +138,9 @@ public class GameSceneController {
             statusLabel.setText("!wait!");
 
             gameListener.onChanged();
+        }
 
+        if (GameFactory.getInstance().getStatus().get()) {
             int bIndex = GameFactory.getInstance().systemPlay();
             Button b = (Button) children.get(bIndex);
             b.setStyle("-fx-text-fill: #13af13");
