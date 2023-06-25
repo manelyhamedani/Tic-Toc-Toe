@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="20.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manely.ap.lab.tictactoe.GameMenuController">
    <children>
       <Label focusTraversable="false" text="Tic Toc Toe" textFill="WHITE">
@@ -13,17 +12,17 @@
             <Font name="Big Caslon Medium" size="40.0" />
          </font>
       </Label>
-      <Button fx:id="playButton" mnemonicParsing="false" onAction="#playButtonPressed" prefWidth="66.5" text="Play" textFill="WHITE">
+      <Button fx:id="playButton" mnemonicParsing="false" onAction="#playButtonPressed" prefWidth="66.5" style="-fx-background-color: transparent;" text="Play" textFill="WHITE">
          <font>
             <Font name="Big Caslon Medium" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="musicButton" mnemonicParsing="false" onAction="#musicButtonPressed" prefWidth="66.5" text="Music" textFill="WHITE">
+      <Button fx:id="musicButton" mnemonicParsing="false" onAction="#musicButtonPressed" prefWidth="66.5" style="-fx-background-color: transparent;" text="Music" textFill="WHITE">
          <font>
             <Font name="Big Caslon Medium" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonPressed" prefWidth="66.5" text="Exit" textFill="WHITE">
+      <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonPressed" prefWidth="66.5" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE">
          <font>
             <Font name="Big Caslon Medium" size="14.0" />
          </font>

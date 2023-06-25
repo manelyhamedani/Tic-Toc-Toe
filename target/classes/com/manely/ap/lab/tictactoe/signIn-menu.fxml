@@ -7,13 +7,13 @@
 
 <VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="14.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manely.ap.lab.tictactoe.SignInMenuController">
    <children>
-      <TextField fx:id="usernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="130.0" promptText="Username" style="-fx-background-color: white;">
+      <TextField fx:id="usernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" promptText="Username" style="-fx-background-color: white;">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font></TextField>
-      <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButtonPressed" text="submit" textFill="WHITE">
+      <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButtonPressed" style="-fx-background-color: transparent;" text="submit" textFill="WHITE">
          <font>
-            <Font name="Apple Braille" size="15.0" />
+            <Font name="Big Caslon Medium" size="16.0" />
          </font>
       </Button>
    </children>

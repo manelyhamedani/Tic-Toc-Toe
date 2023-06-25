@@ -33,7 +33,7 @@
          <children>
             <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" focusTraversable="false" text="Timer: " textAlignment="RIGHT" textFill="WHITE">
                <font>
-                  <Font name="Apple Braille" size="13.0" />
+                  <Font name="Big Caslon Medium" size="13.0" />
                </font>
             </Label>
          </children>
@@ -42,7 +42,7 @@
          <children>
             <Label fx:id="timerLabel" focusTraversable="false" textFill="WHITE">
                <font>
-                  <Font name="Apple Braille" size="13.0" />
+                  <Font name="Big Caslon Medium" size="13.0" />
                </font>
             </Label>
          </children>
@@ -53,12 +53,12 @@
                <children>
                   <Button fx:id="musicButton" focusTraversable="false" mnemonicParsing="false" onAction="#musicButtonPressed" text="Music" textFill="WHITE">
                      <font>
-                        <Font name="Apple Braille" size="13.0" />
+                        <Font name="Big Caslon Medium" size="13.0" />
                      </font>
                   </Button>
                   <Button fx:id="exitButton" focusTraversable="false" mnemonicParsing="false" onAction="#exitButtonPressed" prefWidth="51.0" text="Exit" textFill="WHITE">
                      <font>
-                        <Font name="Apple Braille" size="13.0" />
+                        <Font name="Big Caslon Medium" size="13.0" />
                      </font>
                   </Button>
                </children>
@@ -74,54 +74,54 @@
       <Separator prefWidth="200.0" style="-fx-background-color: grey;" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
       <Label fx:id="playerLabel" focusTraversable="false" textFill="WHITE" GridPane.rowIndex="6">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font>
       </Label>
       <Label fx:id="statusLabel" focusTraversable="false" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font>
       </Label>
       <Label focusTraversable="false" text="Robot: O" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font>
       </Label>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="1">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.rowIndex="1">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="1">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="3">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.rowIndex="3">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="3">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.rowIndex="5">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.rowIndex="5">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" prefWidth="107.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
-      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+      <Button focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Apple Braille Outline 6 Dot" size="50.0" />
          </font></Button>
    </children>
    <padding>

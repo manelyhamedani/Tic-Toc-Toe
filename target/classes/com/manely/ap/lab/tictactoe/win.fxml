@@ -5,22 +5,21 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="30.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manely.ap.lab.tictactoe.WinController">
    <children>
-      <Label fx:id="resultLabel" textFill="WHITE">
+      <Label fx:id="resultLabel" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
-            <Font name="Apple Braille" size="50.0" />
+            <Font name="Big Caslon Medium" size="50.0" />
          </font>
       </Label>
-      <Button fx:id="replayButton" mnemonicParsing="false" onAction="#replayButtonPressed" prefWidth="60.0" text="Replay" textFill="WHITE">
+      <Button fx:id="replayButton" mnemonicParsing="false" onAction="#replayButtonPressed" prefWidth="60.0" style="-fx-background-color: transparent;" text="Replay" textFill="WHITE">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#menuButtonPressed" prefWidth="60.0" text="Menu" textFill="WHITE">
+      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#menuButtonPressed" prefWidth="60.0" style="-fx-background-color: transparent;" text="Menu" textFill="WHITE">
          <font>
-            <Font name="Apple Braille" size="13.0" />
+            <Font name="Big Caslon Medium" size="13.0" />
          </font>
       </Button>
    </children>

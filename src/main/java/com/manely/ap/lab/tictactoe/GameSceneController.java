@@ -14,6 +14,8 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -50,41 +52,16 @@ public class GameSceneController {
     public void initialize() {
         gameListener = new GameListener(gridPane.getChildren());
 
-        GameFactory.getInstance().getStatus().addListener((observableValue, oldValue, newValue) -> {
-            if (!newValue) {
-                Stage stage = (Stage) gridPane.getScene().getWindow();
-
-                Thread thread = new Thread(() -> {
-                    try {
-                        GameFactory.getInstance().finish();
-                        Thread.sleep(2000);
-                        Platform.runLater(() -> {
-                            try {
-                                SceneController.changeScene(stage, "win.fxml");
-                            }
-                            catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                        });
-                    }
-                    catch (InterruptedException e) {
-                       e.printStackTrace();
-                    }
-                });
-                thread.start();
-            }
-        });
-
         timerLabel.setText("60");
 
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000),
-                                    actionEvent -> {
-                                        --remainingSec;
-                                        timerLabel.setText(formatter.format(remainingSec));
-                                        if (remainingSec == 0) {
-                                            GameFactory.getInstance().finish();
-                                        }
-                                    }));
+                actionEvent -> {
+                    --remainingSec;
+                    timerLabel.setText(formatter.format(remainingSec));
+                    if (remainingSec == 0) {
+                        GameFactory.getInstance().finish();
+                    }
+                }));
         timeline.setCycleCount(60);
         timeline.play();
 
@@ -102,6 +79,34 @@ public class GameSceneController {
 
         playerLabel.setText(GameFactory.getInstance().getPlayer() + ": X");
         statusLabel.setText("!your turn!");
+
+
+        GameFactory.getInstance().getStatus().addListener((observableValue, oldValue, newValue) -> {
+            if (!newValue) {
+                timeline.stop();
+
+                Stage stage = (Stage) gridPane.getScene().getWindow();
+
+                Thread thread = new Thread(() -> {
+                    try {
+                        GameFactory.getInstance().finish();
+                        Thread.sleep(2000);
+                        Platform.runLater(() -> {
+                            try {
+                                SceneController.changeScene(stage, "win.fxml");
+                            }
+                            catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        });
+                    }
+                    catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                });
+                thread.start();
+            }
+        });
     }
 
     @FXML
@@ -128,11 +133,8 @@ public class GameSceneController {
                 return;
             }
 
-            for (int i = FIRST_BUTTON_INDEX; i <= LAST_BUTTON_INDEX; ++i) {
-                children.get(i).setDisable(true);
-            }
-
-            button.setStyle("-fx-text-fill: pink");
+            button.setTextFill(Color.PINK);
+            button.setStyle("-fx-background-color: transparent");
             button.setText("X");
             GameFactory.getInstance().unavailableCell((Integer) button.getUserData());
             statusLabel.setText("!wait!");
@@ -143,15 +145,11 @@ public class GameSceneController {
         if (GameFactory.getInstance().getStatus().get()) {
             int bIndex = GameFactory.getInstance().systemPlay();
             Button b = (Button) children.get(bIndex);
-            b.setStyle("-fx-text-fill: #13af13");
+            b.setTextFill(Color.rgb(0x13, 0xaf, 0x13));
+            b.setStyle("-fx-background-color: transparent");
             b.setText("O");
 
             gameListener.onChanged();
-
-
-            for (int i = FIRST_BUTTON_INDEX; i <= LAST_BUTTON_INDEX; ++i) {
-                children.get(i).setDisable(false);
-            }
 
             statusLabel.setText("!your turn!");
         }
