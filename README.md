@@ -42,4 +42,5 @@ Before running the Tic-Tac-Toe game, make sure you have the following installed:
    
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+ file for details.
